@@ -280,3 +280,5 @@ newsfeed_portal/media/
 .env
 .envs/*
 !.envs/.local/
+
+.vscode/
