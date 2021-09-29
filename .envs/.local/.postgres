@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=newsfeed_portal
+POSTGRES_USER=rtXcJiRnBZcGRCtgoVscFpySEVQzOWzw
+POSTGRES_PASSWORD=JMIRh6zile4p7CpowTrwhtJ2RmkQ8SQjGOAXmCVUwn3bQD0YPGe1ArIzLSVq0riy
