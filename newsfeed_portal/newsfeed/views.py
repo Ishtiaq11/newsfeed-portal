@@ -4,8 +4,10 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import View
+from django.views.generic import ListView
 
 from newsfeed_portal.newsfeed.forms import SettingsForm
+from newsfeed_portal.newsfeed.models import News
 from newsfeed_portal.newsfeed.models import Settings as NewsFeedSettings
 
 
@@ -14,7 +16,7 @@ class SettingsUpdateView(LoginRequiredMixin, View):
     form_class = SettingsForm
     initial = {}
     instance = None
-    success_url = reverse_lazy("home")
+    success_url = reverse_lazy("newsfeed:home")
     success_message = "Updated settings successfully"
 
     def get_object(self):
@@ -35,3 +37,9 @@ class SettingsUpdateView(LoginRequiredMixin, View):
             messages.success(request, self.success_message)
             return HttpResponseRedirect(self.success_url)
         return render(request, self.template_name, {"form": form})
+
+
+class NewsFeedHome(ListView):
+    model = News
+    paginate_by = 20
+    template_name = "newsfeed/home.html"

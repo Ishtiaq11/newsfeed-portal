@@ -7,7 +7,7 @@ User = get_user_model()
 
 class Country(models.Model):
     code = models.CharField(max_length=2)
-    name = models.CharField(max_length=30)
+    name = models.CharField(max_length=50, blank=True, null=True)
 
     def __str__(self):
         return f"{self.name}"
@@ -18,15 +18,8 @@ class Country(models.Model):
 
 
 class Source(models.Model):
-    code = models.CharField(max_length=10)
-    name = models.CharField(max_length=30)
-
-    def __str__(self):
-        return f"{self.name}"
-
-
-class Keyword(models.Model):
-    name = models.CharField(max_length=100)
+    code = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, blank=True, null=True)
 
     def __str__(self):
         return f"{self.name}"
@@ -38,7 +31,11 @@ class Settings(models.Model):
         Country, blank=True, related_name="settings_list"
     )
     sources = models.ManyToManyField(Source, blank=True, related_name="settings_list")
-    keywords = TaggableManager()
+    keywords = TaggableManager(
+        verbose_name="Keywords",
+        blank=True,
+        help_text="A comma-separated list of keywords",
+    )
 
     class Meta:
         verbose_name = "Settings"
@@ -46,3 +43,21 @@ class Settings(models.Model):
 
     def __str__(self):
         return f"{self.user}'s newsfeed settings"
+
+
+class News(models.Model):
+    country = models.ForeignKey(
+        Country, blank=True, null=True, on_delete=models.CASCADE
+    )
+    source = models.ForeignKey(Source, blank=True, null=True, on_delete=models.CASCADE)
+    headline = models.TextField(blank=True, null=True)
+    thumbnail = models.URLField(max_length=500)
+    url = models.URLField(max_length=500, unique=True)
+    description = models.TextField(blank=True, null=True)
+
+    def __str__(self):
+        return f"{self.headline}"
+
+    class Meta:
+        verbose_name = "News"
+        verbose_name_plural = "News"

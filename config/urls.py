@@ -7,7 +7,7 @@ from django.views.generic import TemplateView
 from rest_framework.authtoken.views import obtain_auth_token
 
 urlpatterns = [
-    path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
+    # path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
     path(
         "about/", TemplateView.as_view(template_name="pages/about.html"), name="about"
     ),
@@ -17,7 +17,7 @@ urlpatterns = [
     path("users/", include("newsfeed_portal.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
     # newsfeed
-    path("news/", include("newsfeed_portal.newsfeed.urls", namespace="newsfeed")),
+    path("", include("newsfeed_portal.newsfeed.urls", namespace="newsfeed")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # API URLS
