@@ -16,7 +16,8 @@ urlpatterns = [
     # User management
     path("users/", include("newsfeed_portal.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
-    # Your stuff: custom urls includes go here
+    # newsfeed
+    path("news/", include("newsfeed_portal.newsfeed.urls", namespace="newsfeed")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # API URLS

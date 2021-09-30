@@ -1,6 +1,6 @@
 from django.test import TestCase
 
-from .utils import get_top_headlines
+from newsfeed_portal.newsfeed.utils import get_top_headlines
 
 
 class TestUtils(TestCase):
