@@ -1,5 +1,6 @@
 from django.contrib.auth import get_user_model
 from django.db import models
+from taggit.managers import TaggableManager
 
 User = get_user_model()
 
@@ -9,7 +10,7 @@ class Country(models.Model):
     name = models.CharField(max_length=30)
 
     def __str__(self):
-        return f"{self.code} - {self.name}"
+        return f"{self.name}"
 
     class Meta:
         verbose_name = "Country"
@@ -21,7 +22,7 @@ class Source(models.Model):
     name = models.CharField(max_length=30)
 
     def __str__(self):
-        return f"{self.code} - {self.name}"
+        return f"{self.name}"
 
 
 class Keyword(models.Model):
@@ -34,14 +35,10 @@ class Keyword(models.Model):
 class Settings(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     countries = models.ManyToManyField(
-        Country, blank=True, null=True, related_name="settings_list"
+        Country, blank=True, related_name="settings_list"
     )
-    sources = models.ManyToManyField(
-        Source, blank=True, null=True, related_name="settings_list"
-    )
-    keywords = models.ManyToManyField(
-        Keyword, blank=True, null=True, related_name="settings_list"
-    )
+    sources = models.ManyToManyField(Source, blank=True, related_name="settings_list")
+    keywords = TaggableManager()
 
     class Meta:
         verbose_name = "Settings"

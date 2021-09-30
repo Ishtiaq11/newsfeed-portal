@@ -1,8 +1,8 @@
 from django.contrib import admin
 
-from .models import Country, Keyword
-from .models import Settings as NewsFeedSettings
-from .models import Source
+from newsfeed_portal.newsfeed.models import Country, Keyword
+from newsfeed_portal.newsfeed.models import Settings as NewsFeedSettings
+from newsfeed_portal.newsfeed.models import Source
 
 
 class CountryAdmin(admin.ModelAdmin):
