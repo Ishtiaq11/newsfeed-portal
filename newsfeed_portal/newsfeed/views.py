@@ -31,7 +31,6 @@ class SettingsUpdateView(LoginRequiredMixin, View):
 
     def post(self, request, *args, **kwargs):
         form = self.form_class(request.POST, instance=self.get_object())
-        print(form)
         if form.is_valid():
             form.save()
             messages.success(request, self.success_message)
@@ -41,5 +40,18 @@ class SettingsUpdateView(LoginRequiredMixin, View):
 
 class NewsFeedHome(ListView):
     model = News
-    paginate_by = 20
+    paginate_by = 4
     template_name = "newsfeed/home.html"
+
+    def get_queryset(self):
+        settings = (
+            NewsFeedSettings.objects.filter(user=self.request.user)
+            .prefetch_related("countries", "sources")
+            .first()
+        )
+        news_list = News.objects.all()
+        if settings.countries.exists():
+            news_list = news_list.filter(country__in=settings.countries.all())
+        if settings.sources.exists():
+            news_list = news_list.filter(source__in=settings.sources.all())
+        return news_list

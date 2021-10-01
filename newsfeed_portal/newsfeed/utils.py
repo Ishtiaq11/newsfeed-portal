@@ -48,6 +48,7 @@ def save_news(**kwargs):
             news_obj.url = news["url"]
             news_obj.thumbnail = news["urlToImage"]
             news_obj.description = news["description"]
+            news_obj.published_at = news["publishedAt"]
             news_obj.save()
             print(f"Successfully created news. id: #{news_obj.id}")
     except Exception as ex:
