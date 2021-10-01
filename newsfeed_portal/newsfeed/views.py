@@ -49,7 +49,7 @@ class NewsFeedHome(ListView):
             .prefetch_related("countries", "sources")
             .first()
         )
-        news_list = News.objects.all()
+        news_list = News.objects.all().order_by("-published_at")
         if settings.countries.exists():
             news_list = news_list.filter(country__in=settings.countries.all())
         if settings.sources.exists():

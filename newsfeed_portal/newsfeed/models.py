@@ -6,7 +6,7 @@ User = get_user_model()
 
 
 class Country(models.Model):
-    code = models.CharField(max_length=2)
+    code = models.CharField(max_length=2, unique=True)
     name = models.CharField(max_length=50, blank=True, null=True)
 
     def __str__(self):
@@ -18,7 +18,7 @@ class Country(models.Model):
 
 
 class Source(models.Model):
-    code = models.CharField(max_length=100)
+    code = models.CharField(max_length=100, unique=True)
     name = models.CharField(max_length=100, blank=True, null=True)
 
     def __str__(self):

@@ -1,5 +1,7 @@
+import json
 import traceback
 
+from django.conf import settings
 from newsapi import NewsApiClient
 
 from config.settings.base import env
@@ -51,7 +53,12 @@ def save_news(**kwargs):
             news_obj.published_at = news["publishedAt"]
             news_obj.save()
             print(f"Successfully created news. id: #{news_obj.id}")
-    except Exception as ex:
-        print(ex)
+    except Exception:
         track = traceback.format_exc()
         print(track)
+
+
+def get_countries_map():
+    file_path = settings.APPS_DIR / "static/data/countries.json"
+    with open(file_path, "r") as f:
+        return json.load(f)
