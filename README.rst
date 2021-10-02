@@ -3,6 +3,15 @@ Newsfeed Portal
 
 Personalized News Feed
 
+Features
+
+* User Authentication implemented
+* Newsfeed based on user preferences. User can select multiple countries and sources.
+* Pagination added in news index
+* Scrape news in short time after news published in preference countries and sources 
+* Send Email if any key preferred keywords appers in newsfeed  +> In progress ...
+* Newsfeed api for other app integration => In progress ...
+
 .. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter
      :target: https://github.com/pydanny/cookiecutter-django/
      :alt: Built with Cookiecutter Django
@@ -11,6 +20,33 @@ Personalized News Feed
      :alt: Black code style
 
 :License: MIT
+
+Versions
+--------
+* Python 3.9
+* Django 3.1.13
+* Postgres 12.6
+
+
+How to Install
+--------------
+
+.. code-block:: bash
+    
+    # Build the services
+    docker-compose -f local.yml build
+    # Run the stacks
+    docker-compose -f local.yml up
+    # Run in detached mode
+    docker-compose up -d
+    # Migrate database
+    docker-compose -f local.yml run --rm django python manage.py migrate
+    # Run celery worker and beat for backgroun news scraping
+    # worker
+    docker-compose -f local.yml run --rm django celery -A config.celery_app worker --loglevel=info
+    # beat
+    docker-compose -f local.yml run --rm django celery -A config.celery_app beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler
+    
 
 Settings
 --------
