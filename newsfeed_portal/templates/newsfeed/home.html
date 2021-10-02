@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for news in object_list %}
+    {% if forloop.first %}<div class="row">{% endif %}
+    <div class="col-sm">
+        <div class="card mb-4">
+            <a href="{{ news.url }}"><img src="{{ news.thumbnail }}" class="card-img-top" alt="No image"></a>
+            <div class="card-body">
+                <a href="{{ news.url }}">
+                    <h2 class="card-title">{{ news.headline }}</h2>
+                </a>
+                <p class="card-text text-muted h6">Country: {% if news.country %}{{ news.country }}{% else %} --- {% endif %}</p>
+                <p class="card-text text-muted h6">Source: {% if news.source %}{{ news.source }}{% else %} --- {% endif %}</p>
+            </div>
+        </div>
+    </div>
+    {% if forloop.counter|divisibleby:3 %}</div><div class="row">{% endif %}
+    {% if forloop.last %}</div>{% endif %}
+{% empty %}
+    <h2>No news for now</h2>
+
+{% endfor %}
+
+{% include "blocks/pagination.html" %}
+{% endblock content %}
