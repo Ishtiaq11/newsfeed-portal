@@ -9,7 +9,7 @@ Features
 * Newsfeed based on user preferences. User can select multiple countries and sources.
 * Pagination added in news index
 * Scrape news in short time after news published in preference countries and sources 
-* Send Email if any key preferred keywords appers in newsfeed  +> In progress ...
+* Send Email if any key preferred keywords appers in newsfeed  => In progress ...
 * Newsfeed api for other app integration => In progress ...
 
 .. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter
@@ -41,15 +41,31 @@ How to Install
     docker-compose up -d
     # Migrate database
     docker-compose -f local.yml run --rm django python manage.py migrate
-    # Run celery worker and beat for backgroun news scraping
+    # Create superuser
+    docker-compose -f local.yml run --rm django python manage.py createsuperuser
+    # Run celery worker and beat for background news scraping
     # worker
     docker-compose -f local.yml run --rm django celery -A config.celery_app worker --loglevel=info
     # beat
     docker-compose -f local.yml run --rm django celery -A config.celery_app beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler
     
 
+Create Periodic Task to scrape news
+------------------------------------
+* Go to admin page **/admin** and login with the superuser
+* Create an Interval obj of **every 10 minutes**. We don’t want the user to wait more than 15 minutes to get the updates headlines
+* Create Periodic task by registering **newsfeed_portal.newsfeed.tasks.scrape_top_headlines** task and other options
+    
+
 Settings
 --------
+
+* Set newsapi API key in env file
+
+.. code-block:: bash
+
+  # .envs/.local/.django
+  NEWS_API_KEY=<Your api key>
 
 Moved to settings_.
 
