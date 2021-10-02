@@ -77,6 +77,19 @@ To run a celery worker:
     cd newsfeed_portal
     celery -A config.celery_app worker -l info
 
+To run celery `worker` in docker:
+
+.. code-block:: bash
+
+    docker-compose -f local.yml run --rm django celery -A config.celery_app worker --loglevel=info
+    
+
+To run celery `beat` in docker:
+
+.. code-block:: bash
+
+    docker-compose -f local.yml run --rm django celery -A config.celery_app beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler
+
 Please note: For Celery's import magic to work, it is important *where* the celery commands are run. If you are in the same folder with *manage.py*, you should be right.
 
 Deployment
