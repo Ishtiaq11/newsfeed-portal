@@ -34,6 +34,8 @@ admin.site.register(NewsFeedSettings, NewsFeedSettingsAdmin)
 
 class NewsAdmin(admin.ModelAdmin):
     list_display = ["headline", "country", "source", "url"]
+    list_per_page = 25
+    list_filter = ["country", "source"]
 
 
 admin.site.register(News, NewsAdmin)

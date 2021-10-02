@@ -38,7 +38,7 @@ class SettingsUpdateView(LoginRequiredMixin, View):
         return render(request, self.template_name, {"form": form})
 
 
-class NewsFeedHome(ListView):
+class NewsFeedHome(LoginRequiredMixin, ListView):
     model = News
     paginate_by = 4
     template_name = "newsfeed/home.html"

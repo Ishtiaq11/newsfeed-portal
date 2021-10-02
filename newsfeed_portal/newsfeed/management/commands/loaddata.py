@@ -1,3 +1,4 @@
+import logging
 import traceback
 
 from django.core.management.base import BaseCommand, CommandError
@@ -7,8 +8,12 @@ from config.settings.base import env
 from newsfeed_portal.newsfeed.models import Country, Source
 from newsfeed_portal.newsfeed.utils import get_countries_map
 
+logger = logging.getLogger(__name__)
+
 
 class Command(BaseCommand):
+    """Command to create country and source objects from api when developing. Later, we can load data from fixture"""
+
     help = "Load country and source in database"
 
     def handle(self, *args, **options):
@@ -28,7 +33,6 @@ class Command(BaseCommand):
                     if created:
                         source_obj.name = source.get("name")
                         source_obj.save()
-                        # print(f"Created source #{source.id} - {source.name}")
                         self.stdout.write(
                             self.style.SUCCESS(
                                 f"Successfully created source #{source_obj.code} - {source_obj.name}"
@@ -46,8 +50,7 @@ class Command(BaseCommand):
                                 f"Successfully created country #{country_obj.code} - {country_obj.name}"
                             )
                         )
-
         except Exception as ex:
             track = traceback.format_exc()
-            print(track)
+            logger.info(track)
             raise CommandError(ex)

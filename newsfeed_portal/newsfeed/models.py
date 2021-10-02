@@ -51,7 +51,7 @@ class News(models.Model):
     )
     source = models.ForeignKey(Source, blank=True, null=True, on_delete=models.CASCADE)
     headline = models.TextField(blank=True, null=True)
-    thumbnail = models.URLField(max_length=500)
+    thumbnail = models.URLField(max_length=500, null=True)
     url = models.URLField(max_length=500, unique=True)
     description = models.TextField(blank=True, null=True)
     published_at = models.DateTimeField()
