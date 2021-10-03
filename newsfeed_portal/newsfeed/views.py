@@ -1,3 +1,6 @@
+import logging
+
+from django.conf import settings
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponseRedirect
@@ -9,6 +12,8 @@ from django.views.generic import ListView
 from newsfeed_portal.newsfeed.forms import SettingsForm
 from newsfeed_portal.newsfeed.models import News
 from newsfeed_portal.newsfeed.models import Settings as NewsFeedSettings
+
+logger = logging.getLogger(__name__)
 
 
 class SettingsUpdateView(LoginRequiredMixin, View):
@@ -40,7 +45,7 @@ class SettingsUpdateView(LoginRequiredMixin, View):
 
 class NewsFeedHome(LoginRequiredMixin, ListView):
     model = News
-    paginate_by = 4
+    paginate_by = settings.NEWS_PAGE_SIZE
     template_name = "newsfeed/home.html"
 
     def get_queryset(self):
@@ -54,4 +59,5 @@ class NewsFeedHome(LoginRequiredMixin, ListView):
             news_list = news_list.filter(country__in=settings.countries.all())
         if settings.sources.exists():
             news_list = news_list.filter(source__in=settings.sources.all())
+        logger.info(f"Total news in views {len(news_list)}")
         return news_list
