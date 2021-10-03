@@ -45,6 +45,11 @@ How to Install
     docker-compose -f local.yml run --rm django python manage.py createsuperuser
 
 
+Initial Data of countries and sources
+--------------------------------------
+* For now, add some valid countries and sources in the admin
+* We'll add fixture support.
+
 Create Periodic Task to scrape news
 ------------------------------------
 * Go to admin page **/admin** and login with the superuser
