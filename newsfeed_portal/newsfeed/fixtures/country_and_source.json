@@ -1,0 +1,1210 @@
+[
+{
+    "model": "newsfeed.country",
+    "pk": 1,
+    "fields": {
+        "code": "ae",
+        "name": "United Arab Emirates"
+    }
+},
+{
+    "model": "newsfeed.country",
+    "pk": 2,
+    "fields": {
+        "code": "us",
+        "name": "United States"
+    }
+},
+{
+    "model": "newsfeed.country",
+    "pk": 3,
+    "fields": {
+        "code": "ar",
+        "name": "Argentina"
+    }
+},
+{
+    "model": "newsfeed.country",
+    "pk": 4,
+    "fields": {
+        "code": "at",
+        "name": "Austria"
+    }
+},
+{
+    "model": "newsfeed.country",
+    "pk": 5,
+    "fields": {
+        "code": "au",
+        "name": "Australia"
+    }
+},
+{
+    "model": "newsfeed.country",
+    "pk": 6,
+    "fields": {
+        "code": "no",
+        "name": "Norway"
+    }
+},
+{
+    "model": "newsfeed.country",
+    "pk": 7,
+    "fields": {
+        "code": "it",
+        "name": "Italy"
+    }
+},
+{
+    "model": "newsfeed.country",
+    "pk": 8,
+    "fields": {
+        "code": "sa",
+        "name": "Saudi Arabia"
+    }
+},
+{
+    "model": "newsfeed.country",
+    "pk": 9,
+    "fields": {
+        "code": "pk",
+        "name": "Pakistan"
+    }
+},
+{
+    "model": "newsfeed.country",
+    "pk": 10,
+    "fields": {
+        "code": "gb",
+        "name": "United Kingdom"
+    }
+},
+{
+    "model": "newsfeed.country",
+    "pk": 11,
+    "fields": {
+        "code": "de",
+        "name": "Germany"
+    }
+},
+{
+    "model": "newsfeed.country",
+    "pk": 12,
+    "fields": {
+        "code": "br",
+        "name": "Brazil"
+    }
+},
+{
+    "model": "newsfeed.country",
+    "pk": 13,
+    "fields": {
+        "code": "ca",
+        "name": "Canada"
+    }
+},
+{
+    "model": "newsfeed.country",
+    "pk": 14,
+    "fields": {
+        "code": "es",
+        "name": "Spain"
+    }
+},
+{
+    "model": "newsfeed.country",
+    "pk": 15,
+    "fields": {
+        "code": "fr",
+        "name": "France"
+    }
+},
+{
+    "model": "newsfeed.country",
+    "pk": 16,
+    "fields": {
+        "code": "in",
+        "name": "India"
+    }
+},
+{
+    "model": "newsfeed.country",
+    "pk": 17,
+    "fields": {
+        "code": "is",
+        "name": "Iceland"
+    }
+},
+{
+    "model": "newsfeed.country",
+    "pk": 18,
+    "fields": {
+        "code": "ru",
+        "name": "Russian Federation"
+    }
+},
+{
+    "model": "newsfeed.country",
+    "pk": 19,
+    "fields": {
+        "code": "se",
+        "name": "Sweden"
+    }
+},
+{
+    "model": "newsfeed.country",
+    "pk": 20,
+    "fields": {
+        "code": "za",
+        "name": "South Africa"
+    }
+},
+{
+    "model": "newsfeed.country",
+    "pk": 21,
+    "fields": {
+        "code": "ie",
+        "name": "Ireland"
+    }
+},
+{
+    "model": "newsfeed.country",
+    "pk": 22,
+    "fields": {
+        "code": "nl",
+        "name": "Netherlands"
+    }
+},
+{
+    "model": "newsfeed.country",
+    "pk": 23,
+    "fields": {
+        "code": "zh",
+        "name": null
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 1,
+    "fields": {
+        "code": "la-nacion",
+        "name": "La Nacion"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 2,
+    "fields": {
+        "code": "nbc-news",
+        "name": "NBC News"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 3,
+    "fields": {
+        "code": "fox-news",
+        "name": "Fox News"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 4,
+    "fields": {
+        "code": "politico",
+        "name": "Politico"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 5,
+    "fields": {
+        "code": "abc-news",
+        "name": "ABC News"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 6,
+    "fields": {
+        "code": "ign",
+        "name": "IGN"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 7,
+    "fields": {
+        "code": "the-hill",
+        "name": "The Hill"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 8,
+    "fields": {
+        "code": "the-washington-post",
+        "name": "The Washington Post"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 9,
+    "fields": {
+        "code": "abc-news-au",
+        "name": "ABC News (AU)"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 10,
+    "fields": {
+        "code": "aftenposten",
+        "name": "Aftenposten"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 11,
+    "fields": {
+        "code": "al-jazeera-english",
+        "name": "Al Jazeera English"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 12,
+    "fields": {
+        "code": "ansa",
+        "name": "ANSA.it"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 13,
+    "fields": {
+        "code": "argaam",
+        "name": "Argaam"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 14,
+    "fields": {
+        "code": "ars-technica",
+        "name": "Ars Technica"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 15,
+    "fields": {
+        "code": "ary-news",
+        "name": "Ary News"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 16,
+    "fields": {
+        "code": "associated-press",
+        "name": "Associated Press"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 17,
+    "fields": {
+        "code": "australian-financial-review",
+        "name": "Australian Financial Review"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 18,
+    "fields": {
+        "code": "axios",
+        "name": "Axios"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 19,
+    "fields": {
+        "code": "bbc-news",
+        "name": "BBC News"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 20,
+    "fields": {
+        "code": "bbc-sport",
+        "name": "BBC Sport"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 21,
+    "fields": {
+        "code": "bild",
+        "name": "Bild"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 22,
+    "fields": {
+        "code": "blasting-news-br",
+        "name": "Blasting News (BR)"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 23,
+    "fields": {
+        "code": "bleacher-report",
+        "name": "Bleacher Report"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 24,
+    "fields": {
+        "code": "bloomberg",
+        "name": "Bloomberg"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 25,
+    "fields": {
+        "code": "breitbart-news",
+        "name": "Breitbart News"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 26,
+    "fields": {
+        "code": "business-insider",
+        "name": "Business Insider"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 27,
+    "fields": {
+        "code": "business-insider-uk",
+        "name": "Business Insider (UK)"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 28,
+    "fields": {
+        "code": "buzzfeed",
+        "name": "Buzzfeed"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 29,
+    "fields": {
+        "code": "cbc-news",
+        "name": "CBC News"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 30,
+    "fields": {
+        "code": "cbs-news",
+        "name": "CBS News"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 31,
+    "fields": {
+        "code": "cnn",
+        "name": "CNN"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 32,
+    "fields": {
+        "code": "cnn-es",
+        "name": "CNN Spanish"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 33,
+    "fields": {
+        "code": "crypto-coins-news",
+        "name": "Crypto Coins News"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 34,
+    "fields": {
+        "code": "der-tagesspiegel",
+        "name": "Der Tagesspiegel"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 35,
+    "fields": {
+        "code": "die-zeit",
+        "name": "Die Zeit"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 36,
+    "fields": {
+        "code": "el-mundo",
+        "name": "El Mundo"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 37,
+    "fields": {
+        "code": "engadget",
+        "name": "Engadget"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 38,
+    "fields": {
+        "code": "entertainment-weekly",
+        "name": "Entertainment Weekly"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 39,
+    "fields": {
+        "code": "espn",
+        "name": "ESPN"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 40,
+    "fields": {
+        "code": "espn-cric-info",
+        "name": "ESPN Cric Info"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 41,
+    "fields": {
+        "code": "financial-post",
+        "name": "Financial Post"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 42,
+    "fields": {
+        "code": "focus",
+        "name": "Focus"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 43,
+    "fields": {
+        "code": "football-italia",
+        "name": "Football Italia"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 44,
+    "fields": {
+        "code": "fortune",
+        "name": "Fortune"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 45,
+    "fields": {
+        "code": "four-four-two",
+        "name": "FourFourTwo"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 46,
+    "fields": {
+        "code": "fox-sports",
+        "name": "Fox Sports"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 47,
+    "fields": {
+        "code": "globo",
+        "name": "Globo"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 48,
+    "fields": {
+        "code": "google-news",
+        "name": "Google News"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 49,
+    "fields": {
+        "code": "google-news-ar",
+        "name": "Google News (Argentina)"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 50,
+    "fields": {
+        "code": "google-news-au",
+        "name": "Google News (Australia)"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 51,
+    "fields": {
+        "code": "google-news-br",
+        "name": "Google News (Brasil)"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 52,
+    "fields": {
+        "code": "google-news-ca",
+        "name": "Google News (Canada)"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 53,
+    "fields": {
+        "code": "google-news-fr",
+        "name": "Google News (France)"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 54,
+    "fields": {
+        "code": "google-news-in",
+        "name": "Google News (India)"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 55,
+    "fields": {
+        "code": "google-news-is",
+        "name": "Google News (Israel)"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 56,
+    "fields": {
+        "code": "google-news-it",
+        "name": "Google News (Italy)"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 57,
+    "fields": {
+        "code": "google-news-ru",
+        "name": "Google News (Russia)"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 58,
+    "fields": {
+        "code": "google-news-sa",
+        "name": "Google News (Saudi Arabia)"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 59,
+    "fields": {
+        "code": "google-news-uk",
+        "name": "Google News (UK)"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 60,
+    "fields": {
+        "code": "goteborgs-posten",
+        "name": "Göteborgs-Posten"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 61,
+    "fields": {
+        "code": "gruenderszene",
+        "name": "Gruenderszene"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 62,
+    "fields": {
+        "code": "hacker-news",
+        "name": "Hacker News"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 63,
+    "fields": {
+        "code": "handelsblatt",
+        "name": "Handelsblatt"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 64,
+    "fields": {
+        "code": "il-sole-24-ore",
+        "name": "Il Sole 24 Ore"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 65,
+    "fields": {
+        "code": "independent",
+        "name": "Independent"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 66,
+    "fields": {
+        "code": "infobae",
+        "name": "Infobae"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 67,
+    "fields": {
+        "code": "info-money",
+        "name": "InfoMoney"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 68,
+    "fields": {
+        "code": "la-gaceta",
+        "name": "La Gaceta"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 69,
+    "fields": {
+        "code": "la-repubblica",
+        "name": "La Repubblica"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 70,
+    "fields": {
+        "code": "le-monde",
+        "name": "Le Monde"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 71,
+    "fields": {
+        "code": "lenta",
+        "name": "Lenta"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 72,
+    "fields": {
+        "code": "lequipe",
+        "name": "L'equipe"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 73,
+    "fields": {
+        "code": "les-echos",
+        "name": "Les Echos"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 74,
+    "fields": {
+        "code": "liberation",
+        "name": "Libération"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 75,
+    "fields": {
+        "code": "marca",
+        "name": "Marca"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 76,
+    "fields": {
+        "code": "mashable",
+        "name": "Mashable"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 77,
+    "fields": {
+        "code": "medical-news-today",
+        "name": "Medical News Today"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 78,
+    "fields": {
+        "code": "msnbc",
+        "name": "MSNBC"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 79,
+    "fields": {
+        "code": "mtv-news",
+        "name": "MTV News"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 80,
+    "fields": {
+        "code": "mtv-news-uk",
+        "name": "MTV News (UK)"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 81,
+    "fields": {
+        "code": "national-geographic",
+        "name": "National Geographic"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 82,
+    "fields": {
+        "code": "national-review",
+        "name": "National Review"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 83,
+    "fields": {
+        "code": "news24",
+        "name": "News24"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 84,
+    "fields": {
+        "code": "new-scientist",
+        "name": "New Scientist"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 85,
+    "fields": {
+        "code": "news-com-au",
+        "name": "News.com.au"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 86,
+    "fields": {
+        "code": "newsweek",
+        "name": "Newsweek"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 87,
+    "fields": {
+        "code": "new-york-magazine",
+        "name": "New York Magazine"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 88,
+    "fields": {
+        "code": "next-big-future",
+        "name": "Next Big Future"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 89,
+    "fields": {
+        "code": "nfl-news",
+        "name": "NFL News"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 90,
+    "fields": {
+        "code": "nhl-news",
+        "name": "NHL News"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 91,
+    "fields": {
+        "code": "nrk",
+        "name": "NRK"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 92,
+    "fields": {
+        "code": "polygon",
+        "name": "Polygon"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 93,
+    "fields": {
+        "code": "rbc",
+        "name": "RBC"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 94,
+    "fields": {
+        "code": "recode",
+        "name": "Recode"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 95,
+    "fields": {
+        "code": "reddit-r-all",
+        "name": "Reddit /r/all"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 96,
+    "fields": {
+        "code": "reuters",
+        "name": "Reuters"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 97,
+    "fields": {
+        "code": "rt",
+        "name": "RT"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 98,
+    "fields": {
+        "code": "rte",
+        "name": "RTE"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 99,
+    "fields": {
+        "code": "rtl-nieuws",
+        "name": "RTL Nieuws"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 100,
+    "fields": {
+        "code": "sabq",
+        "name": "SABQ"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 101,
+    "fields": {
+        "code": "spiegel-online",
+        "name": "Spiegel Online"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 102,
+    "fields": {
+        "code": "svenska-dagbladet",
+        "name": "Svenska Dagbladet"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 103,
+    "fields": {
+        "code": "t3n",
+        "name": "T3n"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 104,
+    "fields": {
+        "code": "talksport",
+        "name": "TalkSport"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 105,
+    "fields": {
+        "code": "techcrunch",
+        "name": "TechCrunch"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 106,
+    "fields": {
+        "code": "techcrunch-cn",
+        "name": "TechCrunch (CN)"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 107,
+    "fields": {
+        "code": "techradar",
+        "name": "TechRadar"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 108,
+    "fields": {
+        "code": "the-american-conservative",
+        "name": "The American Conservative"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 109,
+    "fields": {
+        "code": "the-globe-and-mail",
+        "name": "The Globe And Mail"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 110,
+    "fields": {
+        "code": "the-hindu",
+        "name": "The Hindu"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 111,
+    "fields": {
+        "code": "the-huffington-post",
+        "name": "The Huffington Post"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 112,
+    "fields": {
+        "code": "the-irish-times",
+        "name": "The Irish Times"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 113,
+    "fields": {
+        "code": "the-jerusalem-post",
+        "name": "The Jerusalem Post"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 114,
+    "fields": {
+        "code": "the-lad-bible",
+        "name": "The Lad Bible"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 115,
+    "fields": {
+        "code": "the-next-web",
+        "name": "The Next Web"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 116,
+    "fields": {
+        "code": "the-sport-bible",
+        "name": "The Sport Bible"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 117,
+    "fields": {
+        "code": "the-times-of-india",
+        "name": "The Times of India"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 118,
+    "fields": {
+        "code": "the-verge",
+        "name": "The Verge"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 119,
+    "fields": {
+        "code": "the-wall-street-journal",
+        "name": "The Wall Street Journal"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 120,
+    "fields": {
+        "code": "the-washington-times",
+        "name": "The Washington Times"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 121,
+    "fields": {
+        "code": "time",
+        "name": "Time"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 122,
+    "fields": {
+        "code": "usa-today",
+        "name": "USA Today"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 123,
+    "fields": {
+        "code": "vice-news",
+        "name": "Vice News"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 124,
+    "fields": {
+        "code": "wired",
+        "name": "Wired"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 125,
+    "fields": {
+        "code": "wired-de",
+        "name": "Wired.de"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 126,
+    "fields": {
+        "code": "wirtschafts-woche",
+        "name": "Wirtschafts Woche"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 127,
+    "fields": {
+        "code": "xinhua-net",
+        "name": "Xinhua Net"
+    }
+},
+{
+    "model": "newsfeed.source",
+    "pk": 128,
+    "fields": {
+        "code": "ynet",
+        "name": "Ynet"
+    }
+}
+]

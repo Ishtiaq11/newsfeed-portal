@@ -47,8 +47,10 @@ How to Install
 
 Initial Data of countries and sources
 --------------------------------------
-* For now, add some valid countries and sources in the admin
-* We'll add fixture support.
+
+.. code-block:: bash
+
+    docker-compose -f local.yml run --rm django python manage.py loaddata country_and_source
 
 Create Periodic Task to scrape news
 ------------------------------------
