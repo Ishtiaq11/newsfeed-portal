@@ -1,12 +1,18 @@
 import logging
 
-from rest_framework.mixins import ListModelMixin
+from rest_framework.mixins import ListModelMixin, RetrieveModelMixin, UpdateModelMixin
 from rest_framework.viewsets import GenericViewSet
 
-from newsfeed_portal.newsfeed.models import News
+from newsfeed_portal.newsfeed.models import Country, News
 from newsfeed_portal.newsfeed.models import Settings as NewsFeedSettings
+from newsfeed_portal.newsfeed.models import Source
 
-from .serializers import NewsSerializer
+from .serializers import (
+    CountrySerializer,
+    NewsFeedSettingsSerializer,
+    NewsSerializer,
+    SourceSerializer,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -28,3 +34,21 @@ class NewsViewSet(ListModelMixin, GenericViewSet):
             news_list = news_list.filter(source__in=settings_obj.sources.all())
         logger.info(f"Total news in api {len(news_list)}")
         return news_list
+
+
+class NewsFeedSettingsViewSet(RetrieveModelMixin, UpdateModelMixin, GenericViewSet):
+    serializer_class = NewsFeedSettingsSerializer
+    queryset = NewsFeedSettings.objects.all()
+
+    def get_object(self):
+        return self.request.user.settings
+
+
+class CountryViewSet(ListModelMixin, GenericViewSet):
+    queryset = Country.objects.all()
+    serializer_class = CountrySerializer
+
+
+class SourceViewSet(ListModelMixin, GenericViewSet):
+    queryset = Source.objects.all()
+    serializer_class = SourceSerializer
