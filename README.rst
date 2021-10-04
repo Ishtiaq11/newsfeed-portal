@@ -74,6 +74,8 @@ Settings
   SENDGRID_GENERATE_MESSAGE_ID=True
   SENDGRID_MERGE_FIELD_FORMAT=-{}-
   SENDGRID_API_URL=https://api.sendgrid.com/v3
+  # news page size for pagination
+  NEWS_PAGE_SIZE=4
 
 Moved to settings_.
 
