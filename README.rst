@@ -10,7 +10,7 @@ Features
 * Pagination added in news index
 * Scrape news in short time after news published in preference countries and sources
 * Send Email if any key preferred keywords appers in newsfeed
-* Newsfeed api for other app integration => In progress ...
+* Newsfeed api for other app integration
 
 .. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter
      :target: https://github.com/pydanny/cookiecutter-django/
@@ -94,6 +94,12 @@ Setting Up Your Users
     $ python manage.py createsuperuser
 
 For convenience, you can keep your normal user logged in on Chrome and your superuser logged in on Firefox (or similar), so that you can see how the site behaves for both kinds of users.
+
+API
+^^^^
+
+* For api,check **http://localhost:8000/api/** in local
+* We'll add api docs in later.
 
 Type checks
 ^^^^^^^^^^^
